@@ -1,0 +1,39 @@
+{
+  "person": [
+    {
+      "id": 1,
+      "name": "Fara",
+      "favoriteColour": "colour-100"
+    },
+    {
+      "id": 2,
+      "name": "Gara",
+      "favoriteColour": "colour-200"
+    },
+    {
+      "id": 3,
+      "name": "Dara",
+      "favoriteColour": "colour-300"
+    },
+    {
+      "id": 4,
+      "name": "Tara",
+      "favoriteColour": "colour-400"
+    },
+    {
+      "id": 5,
+      "name": "Jara",
+      "favoriteColour": "colour-100"
+    },
+    {
+      "id": 6,
+      "name": "Kara",
+      "favoriteColour": "colour-100"
+    },
+    {
+      "id": 7,
+      "name": "Hara",
+      "favoriteColour": "colour-100"
+    }
+  ]
+}
