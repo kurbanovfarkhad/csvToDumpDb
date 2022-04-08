@@ -1,6 +1,11 @@
 package com.example.mapstructexample.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class ColourEntity extends BaseEntity {
+    @Id
     private String id;
     private String colour;
 

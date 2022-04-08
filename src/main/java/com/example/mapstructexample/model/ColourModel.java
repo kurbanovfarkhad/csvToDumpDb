@@ -14,16 +14,18 @@ public class ColourModel extends BaseModel{
         return id;
     }
 
-    public void setId(String id) {
+    public ColourModel setId(String id) {
         this.id = id;
+        return this;
     }
 
     public String getColour() {
         return colour;
     }
 
-    public void setColour(String colour) {
+    public ColourModel setColour(String colour) {
         this.colour = colour;
+        return this;
     }
 
     @Override

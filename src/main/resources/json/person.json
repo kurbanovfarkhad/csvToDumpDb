@@ -3,37 +3,58 @@
     {
       "id": 1,
       "name": "Fara",
-      "favoriteColour": "colour-100"
+      "favoriteColour": "colour-100",
+      "pets": [
+        "pet-1"
+      ]
     },
     {
       "id": 2,
       "name": "Gara",
-      "favoriteColour": "colour-200"
+      "favoriteColour": "colour-200",
+      "pets": [
+
+      ]
     },
     {
       "id": 3,
       "name": "Dara",
-      "favoriteColour": "colour-300"
+      "favoriteColour": "colour-300",
+      "pets": [
+
+      ]
     },
     {
       "id": 4,
       "name": "Tara",
-      "favoriteColour": "colour-400"
+      "favoriteColour": "colour-400",
+      "pets": [
+
+      ]
     },
     {
       "id": 5,
       "name": "Jara",
-      "favoriteColour": "colour-100"
+      "favoriteColour": "colour-100",
+      "pets": [
+
+      ]
     },
     {
       "id": 6,
       "name": "Kara",
-      "favoriteColour": "colour-100"
+      "favoriteColour": "colour-100",
+      "pets": [
+
+      ]
     },
     {
       "id": 7,
       "name": "Hara",
-      "favoriteColour": "colour-100"
+      "favoriteColour": "colour-100",
+      "pets": [
+        "pet-2,pet-3"
+      ]
     }
   ]
 }

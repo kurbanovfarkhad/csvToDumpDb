@@ -1,12 +1,17 @@
 package com.example.mapstructexample.entity;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class PersonEntity extends BaseEntity {
+    @Id
     private String id;
     private String surname;
     private String test;
+    @OneToOne(targetEntity = ColourEntity.class)
     private ColourEntity favoriteColour;
+    @OneToMany(targetEntity = PetEntity.class)
     private List<PetEntity> pets;
 
     public String getId() {

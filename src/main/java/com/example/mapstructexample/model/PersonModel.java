@@ -13,7 +13,8 @@ public class PersonModel extends BaseModel {
     private String name;
     @JsonProperty("person_favoriteColour")
     private String favoriteColour;
-    private List<PetModel> pets;
+    @JsonProperty("person_pets")
+    private String pets;
 
     public Long getId() {
         return id;
@@ -42,11 +43,11 @@ public class PersonModel extends BaseModel {
         return this;
     }
 
-    public List<PetModel> getPets() {
+    public String getPets() {
         return pets;
     }
 
-    public PersonModel setPets(List<PetModel> pets) {
+    public PersonModel setPets(String pets) {
         this.pets = pets;
         return this;
     }

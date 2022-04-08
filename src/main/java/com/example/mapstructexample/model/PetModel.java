@@ -1,8 +1,16 @@
 package com.example.mapstructexample.model;
 
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({"pet_id","pet_name","pet_type"})
 public class PetModel extends BaseModel {
+    @JsonProperty(value = "pet_id")
     private String id;
+    @JsonProperty(value = "pet_name")
     private String name;
+    @JsonProperty(value = "pet_type")
     private String type;
 
     public String getId() {

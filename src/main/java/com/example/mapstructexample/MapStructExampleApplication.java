@@ -1,7 +1,8 @@
 package com.example.mapstructexample;
 
-import com.example.mapstructexample.entity.PersonEntity;
+import com.example.mapstructexample.model.ColourModel;
 import com.example.mapstructexample.model.PersonModel;
+import com.example.mapstructexample.model.PetModel;
 import com.example.mapstructexample.service.EntityService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,13 +10,18 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
 /**
  * first case: different fieldNames
  * - wil throw exception
- *   Unknown property "name" in result type PersonEntity. Did you mean "surname"?
+ * Unknown property "name" in result type PersonEntity. Did you mean "surname"?
  * annotation @Mapping determine target field and source field
+ * <p>
+ * second case: if unmapped field exist
+ * - will throw exception "unmapped property"
+ * Unmapped field will trigger exception
+ *
+ * @Mapper Annotation arguments unmappedSourcePolicy and unmappedTargetPolicy will check all fields to be mapped
  */
 /**
  * second case: if unmapped field exist
@@ -23,6 +29,7 @@ import java.util.List;
  *   Unmapped field will trigger exception
  *   @Mapper Annotation arguments unmappedSourcePolicy and unmappedTargetPolicy will check all fields to be mapped
  */
+
 /**
  *  third case:
  */
@@ -41,6 +48,12 @@ public class MapStructExampleApplication {
 
     @EventListener(ApplicationReadyEvent.class)
     public void onStart() throws IOException {
-        System.out.println(entityService.readFiles(PersonModel.class));
+        final List<?> y = entityService.readColourFiles(ColourModel.class, "csv/colour.json.csv");
+        final List<?> x = entityService.readPetFiles(PetModel.class, "csv/pet.json.csv");
+        final List<?> z = entityService.readPersonFiles(PersonModel.class, "csv/person.json.csv");
+
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
     }
 }

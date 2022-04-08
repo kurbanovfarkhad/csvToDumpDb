@@ -1,5 +1,5 @@
 colour_id,colour_colour
-1.0,"red"
-2.0,"green"
-3.0,"blue"
-4.0,"black"
+"colour-100","red"
+"colour-200","green"
+"colour-300","blue"
+"colour-400","black"

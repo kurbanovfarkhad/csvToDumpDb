@@ -1,19 +1,19 @@
 {
   "colour": [
     {
-      "id": 1,
+      "id": "colour-100",
       "colour": "red"
     },
     {
-      "id": 2,
+      "id": "colour-200",
       "colour": "green"
     },
     {
-      "id": 3,
+      "id": "colour-300",
       "colour": "blue"
     },
     {
-      "id": 4,
+      "id": "colour-400",
       "colour": "black"
     }
   ]
